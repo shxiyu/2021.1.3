@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>大事件-登录注册</title>
     <!-- 导入 layui 的样式 -->
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
     <!-- 导入自己的样式 -->
@@ -25,7 +25,26 @@
 
         <!-- 登录的div -->
         <div class="login-box">
-            <a href="javascript:;" id="link_reg">去注册账号</a>
+            <!-- 登录的表单 -->
+            <form class="layui-form" action="">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit>立即提交</button>
+                </div>
+                <div class="layui-form-item">
+                    <a href="javascript:;" id="link_reg">去注册账号</a>
+                </div>
+            </form>
         </div>
 
         <!-- 注册的div -->
